@@ -147,7 +147,8 @@ RDEPENDS_enigma2-plugin-systemplugins-hotplug = "hotplug-e2-helper"
 
 inherit gitpkgv
 
-PV = "2.7+git${SRCPV}"
+PV = "2.7"
+#PV = "2.7+git${SRCPV}"
 PKGV = "2.7+git${GITPKGV}"
 PR = "r50"
 
