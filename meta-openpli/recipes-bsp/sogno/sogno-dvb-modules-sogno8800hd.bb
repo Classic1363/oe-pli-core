@@ -1,8 +1,8 @@
 KV = "3.9.7"
-SRCDATE = "20131114"
+SRCDATE = "20131115"
 
-SRC_URI[md5sum] = "8bf731eb5af1093f88eac8b7ca5bc661"
-SRC_URI[sha256sum] = "846a0eeb62b606b9f036cb99881169ed673867c8f64e1961f90fab5546cab02b"
+SRC_URI[md5sum] = "e7c9b8c2608006f926d6d385d1c410e1"
+SRC_URI[sha256sum] = "3fc933824d131120b5e7a8d9512c457a14b2220076b637916ba8b0b9c8c6bc4c"
 
 SRC_URI = "http://whitebox.host.sk/bcm/driver/sogno8800hd-drivers-${KV}-${SRCDATE}.zip"
 
