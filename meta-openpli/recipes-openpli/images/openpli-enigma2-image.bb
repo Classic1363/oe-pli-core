@@ -56,7 +56,7 @@ ENIGMA2_PLUGINS = " \
 	${@base_contains('OPENPLI_FEATURES', 'fan', 'enigma2-plugin-systemplugins-tempfancontrol', '', d)} \
 	enigma2-plugin-extensions-mediaportal \
 	enigma2-plugin-extensions-iptvlistupdater \
-	enigma2-plugin-extensions-crossepg \
+	enigma2-plugin-systemplugins-crossepg \
 	"
 
 DEPENDS += " \
