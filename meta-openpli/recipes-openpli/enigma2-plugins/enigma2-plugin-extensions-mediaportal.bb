@@ -5,7 +5,7 @@ LICENSE = "proprietary"
 
 DEPENDS = "python"
 
-require conf/license/license-gplv2.inc
+require conf/license/openpli-gplv2.inc
 
 inherit autotools gitpkgv
 
