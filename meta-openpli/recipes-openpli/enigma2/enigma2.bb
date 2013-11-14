@@ -147,13 +147,12 @@ RDEPENDS_enigma2-plugin-systemplugins-hotplug = "hotplug-e2-helper"
 
 inherit gitpkgv
 
-PV = "2.7"
-#PV = "2.7+git${SRCPV}"
+PV = "2.7+git${SRCPV}"
 PKGV = "2.7+git${GITPKGV}"
-PR = "r50"
+PR = "r51"
 
 ENIGMA2_BRANCH ?= "master"
-SRC_URI = "https://github.com/sogno/stbgui.git;protocol=git;branch=${ENIGMA2_BRANCH}"
+SRC_URI = "git://github.com/sogno/stbgui.git;protocol=git;branch=${ENIGMA2_BRANCH}"
 
 S = "${WORKDIR}/git"
 
