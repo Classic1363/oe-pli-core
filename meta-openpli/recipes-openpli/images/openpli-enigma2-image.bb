@@ -22,6 +22,7 @@ WIFI_DRIVERS = " \
 	"
 
 ENIGMA2_PLUGINS = " \
+	enigma2-plugin-drivers-usbserial \
 	enigma2-plugin-extensions-audiosync \
 	enigma2-plugin-extensions-autobackup \
 	enigma2-plugin-extensions-cutlisteditor \
@@ -31,6 +32,7 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-extensions-openwebif \
 	enigma2-plugin-extensions-pictureplayer \
 	enigma2-plugin-extensions-ppanel \
+	enigma2-plugin-extensions-zaphistorybrowser \
 	\
 	enigma2-plugin-pli-softcamsetup \
 	\
@@ -43,6 +45,8 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-systemplugins-softwaremanager \
 	enigma2-plugin-systemplugins-videomode \
 	enigma2-plugin-systemplugins-videotune \
+	enigma2-plugin-systemplugins-devicemanager \
+	enigma2-plugin-systemplugins-swapmanager \
 	\
 	${@base_contains("MACHINE_FEATURES", "3dtv", "enigma2-plugin-systemplugins-osd3dsetup" , "", d)} \
 	${@base_contains("MACHINE_FEATURES", "dvb-c", "enigma2-plugin-systemplugins-cablescan" , "", d)} \
@@ -68,7 +72,6 @@ DEPENDS += " \
 ENIGMA2_OPTIONAL = " \
 	channelsettings-enigma2-meta \
 	enigma2-pliplugins \
-	enigma2-plugin-drivers-usbserial \
 	enigma2-plugin-extensions-ambx \
 	enigma2-plugin-extensions-et-livestream \
 	enigma2-plugin-extensions-openuitzendinggemist \

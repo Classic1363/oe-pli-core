@@ -27,6 +27,12 @@ IMAGE_INSTALL = " \
 	util-linux-sfdisk \
 	volatile-media \
 	vsftpd \
+	libcrypto-compat \
+	hddtemp \
+	dosfstools \
+	ntfs-3g \
+	task-base-smbfs-client \
+	task-base-smbfs \     
 	"
 
 OPTIONAL_PACKAGES ?= ""
@@ -40,7 +46,6 @@ OPTIONAL_PACKAGES += " \
 	dvdfs \
 	evtest \
 	gdb \
-	hddtemp \
 	hdparm \
 	inadyn-mt \
 	iperf \
@@ -50,7 +55,6 @@ OPTIONAL_PACKAGES += " \
 	mpd \
 	mtd-utils \
 	nano \
-	ntfs-3g \
 	ntp \
 	openresolv \
 	openssh \
