@@ -30,9 +30,7 @@ IMAGE_INSTALL = " \
 	libcrypto-compat \
 	hddtemp \
 	dosfstools \
-	ntfs-3g \
-	task-base-smbfs-client \
-	task-base-smbfs \     
+	ntfs-3g \ 
 	"
 
 OPTIONAL_PACKAGES ?= ""
