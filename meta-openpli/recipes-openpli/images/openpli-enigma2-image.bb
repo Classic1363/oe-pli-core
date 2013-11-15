@@ -46,7 +46,6 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-systemplugins-videomode \
 	enigma2-plugin-systemplugins-videotune \
 	enigma2-plugin-systemplugins-devicemanager \
-	enigma2-plugin-systemplugins-swapmanager \
 	\
 	${@base_contains("MACHINE_FEATURES", "3dtv", "enigma2-plugin-systemplugins-osd3dsetup" , "", d)} \
 	${@base_contains("MACHINE_FEATURES", "dvb-c", "enigma2-plugin-systemplugins-cablescan" , "", d)} \
