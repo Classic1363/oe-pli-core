@@ -4,14 +4,14 @@ LICENSE = "GPLv2"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 KV = "3.9.7"
-SRCDATE = "20131115"
+SRCDATE = "20131118"
 
-SRC_URI[md5sum] = "ae379d7cd0c6cb1dd891c5360756dec8"
-SRC_URI[sha256sum] = "be0f5af7f91c1010389db0f05f22e24b0fd26c571c9b0d9874d8558a301a6773"
+SRC_URI[md5sum] = "4e0f0035c217f9879c806e8337648860"
+SRC_URI[sha256sum] = "faad72e074a8f02788d8ed576b7f8adfb8fc2ad22a5a11258c7ab06bc6b62328"
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-MACHINE_KERNEL_PR_append = ".8"
+MACHINE_KERNEL_PR_append = ".9"
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
 # to be installed in parallel. We revert this change and rprovide the versioned
