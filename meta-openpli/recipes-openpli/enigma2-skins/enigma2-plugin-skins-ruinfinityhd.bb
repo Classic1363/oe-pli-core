@@ -5,7 +5,7 @@ PRIORITY = "required"
 LICENSE = "proprietary"
 PACKAGE_ARCH = "all"
 
-require conf/license/license-gplv2.inc
+require conf/license/openpli-gplv2.inc
 
 inherit gitpkgv
 SRCREV = "${AUTOREV}"
