@@ -11,7 +11,7 @@ SRC_URI[sha256sum] = "f5f9f7f19a51fb00d1078d4572f3ce1b6e2c4484c4a57d2f049de8dea4
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-MACHINE_KERNEL_PR_append = ".16"
+MACHINE_KERNEL_PR_append = ".17"
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
 # to be installed in parallel. We revert this change and rprovide the versioned
@@ -53,8 +53,8 @@ MTD_DEVICE_sogno8800hd = "mtd2"
 pkg_postinst_kernel-image () {
 	if [ "x$D" == "x" ]; then
 		if [ -f /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz ] ; then
-			flash_eraseall /dev/${MTD_DEVICE} 0 0
-			nandwrite -p /dev/${MTD_DEVICE} /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz
+			flash_eraseall /dev/mtd2
+			nandwrite -p /dev/mtd2 /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz
 			rm -f /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz
 		fi
 	fi
