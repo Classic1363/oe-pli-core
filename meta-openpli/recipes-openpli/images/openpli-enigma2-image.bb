@@ -33,6 +33,7 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-extensions-pictureplayer \
 	enigma2-plugin-extensions-ppanel \
 	enigma2-plugin-extensions-zaphistorybrowser \
+	enigma2-plugin-extensions-multiquickbutton \
 	\
 	enigma2-plugin-pli-softcamsetup \
 	\
