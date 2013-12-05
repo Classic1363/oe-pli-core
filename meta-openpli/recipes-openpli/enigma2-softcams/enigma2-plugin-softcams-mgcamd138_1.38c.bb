@@ -3,7 +3,7 @@ CAMNAME = "mgcamd"
 
 RDEPENDS_${PN} = "libcrypto-compat"
 
-PR = "r5"
+PR = "r6"
 
 SRC_URI = "http://whitebox.host.sk/bcm/mirrors/mgcamd${PV}.zip"
 
@@ -26,7 +26,6 @@ do_install() {
 	install -m 0644 ${S}/mg_cfg ${D}/usr/keys/mg_cfg
 	install -m 0644 ${S}/newcamd.list ${D}/usr/keys/newcamd.list
 	install -m 0644 ${S}/cccamd.list ${D}/usr/keys/cccamd.list
-	install -m 0644 ${S}/ignore.list ${D}/usr/keys/ignore.list
 	install -m 0644 ${S}/priority.list ${D}/usr/keys/priority.list
 	install -m 0644 ${S}/replace.list ${D}/usr/keys/replace.list
 	install -m 0644 ${S}/peer.cfg ${D}/usr/keys/peer.cfg
