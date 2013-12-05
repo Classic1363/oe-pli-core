@@ -3,11 +3,11 @@ CAMNAME = "mgcamd"
 
 RDEPENDS_${PN} = "libcrypto-compat"
 
-PR = "r3"
+PR = "r4"
 
 SRC_URI = "http://whitebox.host.sk/bcm/mirrors/mgcamd${PV}.zip"
 
-S = "${WORKDIR}/"
+S = "${WORKDIR}/mgcamd${PV}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 
@@ -17,7 +17,7 @@ require softcam.inc
 
 do_install() {
 	install -d ${D}/usr/lib
-	install -m 0644 ${S}/mgcamd1.38c/libcrypto.so.0.9.7 ${D}/usr/lib/libcrypto.so.0.9.7
+	install -m 0644 ${S}/libcrypto.so.0.9.7 ${D}/usr/lib/libcrypto.so.0.9.7
 	
 	install -d ${D}/usr/bin
 	install -m 0755 ${S}/mgcamd.mips ${D}/usr/bin/mgcamd
