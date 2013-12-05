@@ -1,9 +1,7 @@
 DESCRIPTION = "mgcamd ${PV} softcam"
 CAMNAME = "mgcamd"
 
-RDEPENDS_${PN} = "libcrypto-compat"
-
-PR = "r6"
+PR = "r7"
 
 SRC_URI = "http://whitebox.host.sk/bcm/mirrors/mgcamd${PV}.zip"
 
