@@ -1,17 +1,16 @@
 DESCRIPTION = "mgcamd ${PV} softcam"
-CAMNAME = "mgcamd"
 
-PR = "r7"
+PR = "r8"
 
 SRC_URI = "http://whitebox.host.sk/bcm/mirrors/mgcamd${PV}.zip"
 
+CAMNAME = "mgcamd"
+
 S = "${WORKDIR}/mgcamd${PV}"
 
-INHIBIT_PACKAGE_STRIP = "1"
-
-CAMSTART = "sleep 3 ; start-stop-daemon -S -b -x /usr/bin/${CAMNAME}"
-
 require softcam.inc
+
+INHIBIT_PACKAGE_STRIP = "1"
 
 do_install() {
 	install -d ${D}/usr/lib
