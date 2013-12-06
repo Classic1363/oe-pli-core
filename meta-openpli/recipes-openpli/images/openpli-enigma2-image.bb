@@ -34,8 +34,6 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-extensions-ppanel \
 	enigma2-plugin-extensions-zaphistorybrowser \
 	\
-	enigma2-plugin-pli-softcamsetup \
-	\
 	enigma2-plugin-systemplugins-fastscan \
 	enigma2-plugin-systemplugins-hotplug \
 	enigma2-plugin-systemplugins-networkbrowser \
@@ -69,6 +67,7 @@ DEPENDS += " \
 	"
 
 ENIGMA2_OPTIONAL = " \
+	enigma2-plugin-pli-softcamsetup \
 	channelsettings-enigma2-meta \
 	enigma2-pliplugins \
 	enigma2-plugin-extensions-ambx \
