@@ -1,6 +1,6 @@
 DESCRIPTION = "mgcamd ${PV} softcam"
 
-PR = "r8"
+PR = "r9"
 
 SRC_URI = "http://whitebox.host.sk/bcm/mirrors/mgcamd${PV}.zip"
 
