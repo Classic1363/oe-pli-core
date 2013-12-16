@@ -11,7 +11,7 @@ SRC_URI[sha256sum] = "215c488e61792a97ec37852ff38deac901f2f73c15f24bd5383d978547
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-MACHINE_KERNEL_PR_append = ".23"
+MACHINE_KERNEL_PR_append = ".24"
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
 # to be installed in parallel. We revert this change and rprovide the versioned
