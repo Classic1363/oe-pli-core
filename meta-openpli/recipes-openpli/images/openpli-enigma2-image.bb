@@ -60,6 +60,8 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-extensions-mediaportal \
 	enigma2-plugin-extensions-iptvlistupdater \
 	enigma2-plugin-systemplugins-crossepg \
+	\
+	enigma2-plugin-settings-sogno-admin-astra-192 \
 	"
 
 DEPENDS += " \
