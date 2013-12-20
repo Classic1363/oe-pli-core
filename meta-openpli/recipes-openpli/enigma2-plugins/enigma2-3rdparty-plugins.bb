@@ -10,7 +10,7 @@ SRCREV = "${AUTOREV}"
 PV = "git${SRCPV}"
 PKGV = "git${GITPKGV}"
 PV = "2.0"
-PR = "r82"
+PR = "r83"
 
 SRC_URI="git://github.com/sogno/3rdparty-plugins.git;protocol=git"
 
