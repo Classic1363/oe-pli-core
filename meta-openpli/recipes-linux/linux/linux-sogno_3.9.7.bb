@@ -11,7 +11,7 @@ SRC_URI[sha256sum] = "cffec4145848132b8ceecba0ed5f987ea10da84608917ce3c5d6ea8f5b
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-MACHINE_KERNEL_PR_append = ".27"
+MACHINE_KERNEL_PR_append = ".28"
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
 # to be installed in parallel. We revert this change and rprovide the versioned
@@ -49,7 +49,7 @@ kernel_do_install_append() {
 	rm ${D}${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}-${KERNEL_VERSION}
 }
 
-MTD_DEVICE_sogno8800hd = "mtd2"
+MTD_DEVICE_sogno8800hd = "mtd7"
 
 pkg_postinst_kernel-image () {
 	if [ "x$D" == "x" ]; then
