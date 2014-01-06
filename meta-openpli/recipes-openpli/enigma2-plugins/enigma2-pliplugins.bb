@@ -18,11 +18,13 @@ inherit gitpkgv
 
 PV = "1.0+git${SRCPV}"
 PKGV = "1.0+git${GITPKGV}"
-PR = "r7"
+PR = "r8"
 
-SRC_URI = "git://git.code.sf.net/p/openpli/enigma2-plugins;protocol=git \
-		   file://pythonpaths.patch"
+#SRC_URI = "git://git.code.sf.net/p/openpli/enigma2-plugins;protocol=git \
+#		   file://pythonpaths.patch"
 
+SRC_URI = "git://git.code.sf.net/p/openpli/enigma2-plugins;protocol=git"
+		   
 S = "${WORKDIR}/git"
 
 inherit autotools
