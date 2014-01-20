@@ -62,6 +62,8 @@ ENIGMA2_PLUGINS = " \
 	enigma2-plugin-systemplugins-crossepg \
 	\
 	enigma2-plugin-settings-sogno-admin-astra-192 \
+	\
+	oe-alliance-branding \
 	"
 
 DEPENDS += " \
