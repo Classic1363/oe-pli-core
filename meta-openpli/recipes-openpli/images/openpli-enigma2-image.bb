@@ -70,6 +70,7 @@ DEPENDS += " \
 	enigma2 \
 	enigma2-pliplugins \
 	enigma2-plugins \
+	oe-alliance-branding \
 	"
 
 ENIGMA2_OPTIONAL = " \
